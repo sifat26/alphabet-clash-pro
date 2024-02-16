@@ -10,17 +10,101 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
-    <section class="home">
+  <body class="font-popins">
+    <main
+      class="min-h-screen bg-[#010313] bg-[url(./images/background.png)] bg-no-repeat bg-center text-white"
+    >
+      <section class="home min-h-screen flex flex-col justify-center hidden">
+        <div class="flex flex-col items-center gap-10">
+          <h1 class="text-white text-8xl lg:text-9xl anton-font">
+            ALPHABET CLASH
+          </h1>
+          <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+          <button class="btn text-black bg-white">Play Now</button>
+        </div>
+      </section>
+      <!-- PlayGround Section Start-->
 
-    </section>
-    <section class="playground">
+      <section class="playground flex flex-col gap-20 justify-center items-center hidden">
+        <div
+          class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-gray-950 border-opacity-80 bg-white bg-opacity-70 mt-16"
+        >
+          <div class="flex justify-center">
+            <p class="bg-slate-800 rounded-bl-xl rounded-br-xl px-7 py-2">
+              Don't watch keyboard while playing...
+            </p>
+          </div>
+          <div class="flex justify-center items-center h-full">
+            <p class="text-gray-950 text-9xl font-semibold">Y</p>
+          </div>
+        </div>
+        <div>
+          <!-- Keyboard Start-->
+          <div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">q</kbd>
+              <kbd class="kbd">w</kbd>
+              <kbd class="kbd">e</kbd>
+              <kbd class="kbd">r</kbd>
+              <kbd class="kbd">t</kbd>
+              <kbd class="kbd">y</kbd>
+              <kbd class="kbd">u</kbd>
+              <kbd class="kbd">i</kbd>
+              <kbd class="kbd">o</kbd>
+              <kbd class="kbd">p</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">a</kbd>
+              <kbd class="kbd">s</kbd>
+              <kbd class="kbd">d</kbd>
+              <kbd class="kbd">f</kbd>
+              <kbd class="kbd">g</kbd>
+              <kbd class="kbd">h</kbd>
+              <kbd class="kbd">j</kbd>
+              <kbd class="kbd">k</kbd>
+              <kbd class="kbd">l</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd">z</kbd>
+              <kbd class="kbd">x</kbd>
+              <kbd class="kbd">c</kbd>
+              <kbd class="kbd">v</kbd>
+              <kbd class="kbd">b</kbd>
+              <kbd class="kbd">n</kbd>
+              <kbd class="kbd">m</kbd>
+              <kbd class="kbd">/</kbd>
+            </div>
+          </div>
+          <!-- Keyboard End -->
+        </div>
+        <div class="flex justify-between w-4/6">
+          <button class="btn text-xl text-white bg-fuchsia-800 rounded-3xl">
+            Life
+            <img src="./images/hart.svg" alt="" />
+            <span>1</span>
+          </button>
+          <button class="btn text-xl text-white bg-violet-900 rounded-3xl">
+            Score
+            <img src="./images/monetization_on.svg" alt="" />
+            <span>1</span>
+          </button>
+        </div>
+      </section>
 
-    </section>
-    <section class="score">
-        
-    </section>
+      <!-- PlayGround Section End-->
+
+      <section class="score">
+
+      </section>
+      
+    </main>
   </body>
 </html>
