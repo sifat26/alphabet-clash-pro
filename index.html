@@ -22,18 +22,22 @@
     <main
       class="min-h-screen bg-[#010313] bg-[url(./images/background.png)] bg-no-repeat bg-center text-white"
     >
-      <section class="home min-h-screen flex flex-col justify-center hidden">
+      <section id="home-screen" class="home min-h-screen flex flex-col justify-center">
         <div class="flex flex-col items-center gap-10">
           <h1 class="text-white text-8xl lg:text-9xl anton-font">
             ALPHABET CLASH
           </h1>
           <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button class="btn text-black bg-white">Play Now</button>
+          <button onclick="play()" class="btn text-black bg-white">
+            Play Now
+          </button>
         </div>
       </section>
       <!-- PlayGround Section Start-->
 
-      <section class="playground flex flex-col gap-20 justify-center items-center hidden">
+      <section id="playground"
+        class="playground flex flex-col gap-20 justify-center items-center hidden"
+      >
         <div
           class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-gray-950 border-opacity-80 bg-white bg-opacity-70 mt-16"
         >
@@ -101,10 +105,24 @@
 
       <!-- PlayGround Section End-->
 
-      <section class="score">
-
+      <section
+        class="score flex flex-col min-h-screen justify-center items-center text-center hidden"
+      >
+        <div
+          class="bg-[#6127BD] from-[#FFFFFF12] to-[#FFFFFF33] rounded-2xl border border-white border-opacity-20 p-10 space-y-4"
+        >
+          <h1 class="text-6xl">
+            <span class="text-white font-extrabold"> Score : </span
+            ><span> 14 </span>
+          </h1>
+          <button class="border-none btn bg-white text-black rounded-lg">
+            Play Again
+          </button>
+          <p>Practice will make you Pro</p>
+        </div>
       </section>
-      
     </main>
+
+    <script src="./Scripts/alpha-clash.js"></script>
   </body>
 </html>
