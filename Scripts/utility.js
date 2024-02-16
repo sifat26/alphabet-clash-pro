@@ -1,0 +1,16 @@
+function hideElementById(elementID) {
+  const element = document.getElementById(elementID);
+  element.classList.add("hidden");
+}
+function showElementById(elementID) {
+  const element = document.getElementById(elementID);
+  element.classList.remove("hidden");
+}
+function getRandomAlphabet() {
+  const alphabetString = "ABCDEFGHIJKLMNOPQRSTUVW";
+  const alphabets = alphabetString.split("");
+  const randomNumber = Math.random() * 25;
+  const randomIndex = Math.floor(randomNumber);
+  const alphabet = alphabets[randomIndex];
+  return alphabet;
+}
