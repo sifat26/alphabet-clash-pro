@@ -4,10 +4,19 @@ function play() {
   // homeSection.classList.add('hidden');
   // const gameSection=document.getElementById("playground");
   // gameSection.classList.remove('hidden');
+  hideElementById('result')
   hideElementById("home-screen");
   showElementById("playground");
   continuousGame();
 }
+function gameOver(){
+  hideElementById("playground");
+  showElementById("result");
+
+
+}
+
+
 function handleKeyboardEvent(event) {
   const currentPress = event.key;
   const targetKey = document.getElementById("random-alphabet");
@@ -29,6 +38,10 @@ function handleKeyboardEvent(event) {
     const currentLife = getTextElementById("current-life");
     const newLife = currentLife - 1;
     setTextElementById("current-life", newLife);
+    if(newLife===0)
+    {
+      gameOver();
+    }
     // console.log("you lose a lIFE");
     // const currentLifeText=document.getElementById('current-life');
     // const currentLifeValue=currentLifeText.innerText;

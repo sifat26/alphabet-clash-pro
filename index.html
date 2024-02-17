@@ -105,17 +105,18 @@
 
       <!-- PlayGround Section End-->
 
-      <section
+      <section id="result"
         class="score flex flex-col min-h-screen justify-center items-center text-center hidden"
       >
         <div
           class="bg-[#6127BD] from-[#FFFFFF12] to-[#FFFFFF33] rounded-2xl border border-white border-opacity-20 p-10 space-y-4"
         >
+        <h4 class="text-4xl font-bold">Game Over</h4>
           <h1 class="text-6xl">
             <span class="text-white font-extrabold"> Score : </span
             ><span> 14 </span>
           </h1>
-          <button class="border-none btn bg-white text-black rounded-lg">
+          <button onclick="play()" class="border-none btn bg-white text-black rounded-lg">
             Play Again
           </button>
           <p>Practice will make you Pro</p>
