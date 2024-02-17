@@ -15,6 +15,11 @@ function play() {
 function gameOver(){
   hideElementById("playground");
   showElementById("result");
+  const scoreFinal=document.getElementById("last-score");
+  scoreFinal.innerText=getTextElementById("current-score");
+  const currentAlphabet =getElementById('random-alphabet');
+  // console.log(currentAlphabet);
+  removeBackgroundColor(currentAlphabet);
 
 
 }
@@ -22,6 +27,10 @@ function gameOver(){
 
 function handleKeyboardEvent(event) {
   const currentPress = event.key;
+  if(currentPress==='Escape')
+  {
+    gameOver();
+  }
   const targetKey = document.getElementById("random-alphabet");
   const targetKeyPress = targetKey.innerText.toLowerCase();
 
