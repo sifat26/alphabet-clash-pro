@@ -7,7 +7,10 @@ function play() {
   hideElementById('result')
   hideElementById("home-screen");
   showElementById("playground");
-  continuousGame();
+  setTextElementById("current-score",0);
+  setTextElementById("current-life",5);
+
+  continuousGame("current-life");
 }
 function gameOver(){
   hideElementById("playground");
