@@ -17,12 +17,22 @@ function handleKeyboardEvent(event) {
   {
     console.log("you get a point");
     removeBackgroundColor(currentPress);
+    const currentPressText=document.getElementById('current-score');
+    const currentPressValue=currentPressText.innerText;
+    const currentScore=parseInt(currentPressValue);
+    const newScore=currentScore+1;
+    currentPressText.innerText=newScore;
     continuousGame();
 
   }
   else
   {
     console.log("you lose a lIFE");
+    const currentLifeText=document.getElementById('current-life');
+    const currentLifeValue=currentLifeText.innerText;
+    const currentLife=parseInt(currentLifeValue);
+    const newLife=currentLife-1;
+    currentLifeText.innerText=newLife;
   }
 }
 document.addEventListener("keyup", handleKeyboardEvent);
